@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+    --primary-color: darkred;
+    --primary-color-dark: coral;
+    --secondary-color: darkkhaki;
+    --text-dark: coral;
+    --extra-light: black;
+    --max-width: 1200px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    background: burlywood;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: peachpuff;
+    z-index: 99;
+}
+
+.nav__content{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+nav .logo a:hover {
+    color: var(--primary-color-dark);
+}
+
+nav .checkbox{
+    display: none;
+}
+
+nav input{
+    display: none;
+}
+nav .checkbox i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+ul li a:hover{
+    border-top-color: var(--secondary-clor);
+    border-bottom-color: var(--secondary-clor);
+    color: var(--secondary-color);
+}
+
+.box{
+    display: flex;
+    padding: 60px;
+    margin: 18px;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  .box-a,
+  .box-b,
+  .box-c,
+  .box-d{
+    width: 227px;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 4px;
+    background-color:peachpuff;
+    border-radius: 2%;
+  }
+
+  .box-a span img,
+  .box-b span img,
+  .box-c span img,
+  .box-d span img{
+    width: 100px;
+    height: px;
+    margin: 10px;
+    border-radius: 2%;
+  }
+
+  .heading{
+    font-size: 18px;
+    font-family: calibri;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Menu for Area Calculation</title>
+    <link rel="stylesheet" href="menucss.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul id="menu-list">
+            <!-- Menu items -->
+            <li><button onclick="showSquareCalculator()">Hitung Luas Persegi</button></li>
+            <li><button onclick="showCircleCalculator()">Hitung Luas Lingkaran</button></li>
+        </ul>
+    </nav>
+
+    <!-- Form for calculating square area -->
+    <div id="square-calculator" style="display:none">
+        <h2>Hitung Luas Persegi</h2>
+        <label for="side">Sisi (cm): </label>
+        <input type="number" id="side" placeholder="Masukkan panjang sisi">
+        <button onclick="calculateSquareArea()">Hitung</button>
+        <p id="square-result"></p>
+    </div>
+
+    <!-- Form for calculating circle area -->
+    <div id="circle-calculator" style="display:none">
+        <h2>Hitung Luas Lingkaran</h2>
+        <label for="radius">Jari-jari (cm): </label>
+        <input type="number" id="radius" placeholder="Masukkan panjang jari-jari">
+        <button onclick="calculateCircleArea()">Hitung</button>
+        <p id="circle-result"></p>
+    </div>
+
+    <script src="menujs.js"></script>
+</body>
+</html>
